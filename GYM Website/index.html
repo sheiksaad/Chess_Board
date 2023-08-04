@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Saad Fitness</title>
+</head>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Anton&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="CSS/style.css">
+<style>
+    /* CSS RESET  */
+    body{
+        font-family: 'Anton', sans-serif;
+        color: white;
+        margin: 0;
+        padding: 0;
+        background: url('img/man-gdd48e3457_1280.jpg');
+        background-repeat: no-repeat;
+        /* background-size: auto; */
+        background-size: 1366px 786px;
+    }
+    .left{
+        /* border: 2px solid red; */
+        display: inline-block;
+        position: absolute;
+        left: 60px;
+        top: 20px;
+    }
+    .left img{
+        width: 100px;
+        height: 100px;
+        /* filter: invert(100%); */
+        border-radius: 5px;
+    }
+    .left div{
+        text-align: center;
+        background-color: #272222;
+        /* line-height: 19px;
+        font-size: 26px; */
+    }
+    .mid{
+        /* border: 2px solid green; */
+        display: block;
+        width: 33%;
+        margin: 20px auto;
+    }
+    .right{
+        position: absolute;
+        right: 34px;
+        top: 33px;
+        /* border: 2px solid aqua; */
+        display: inline-block;
+    }
+    .navbar{
+        display: inline-block;
+    }
+    .navbar li{
+        display: inline-block;
+        font-size: 15px;
+    }
+    .navbar a{
+        color: white;
+        text-decoration: none;
+        padding: 34px 12px;
+    }
+    .navbar li a:hover, .navbar li a.active{
+        text-decoration: underline;
+        color: gray;
+    }
+    .btn{
+        margin: 0px 10px;
+        color: white;
+        background-color: black;
+        padding: 4px 14px;
+        border: 2px solid rgb(27, 26, 26);
+        border-radius: 10px;
+        cursor: pointer;
+    }
+    .btn:hover{
+        background-color: gray;
+    }
+    .container{
+        border: 2px solid white;
+        margin: 106px 80px;
+        padding: 75px;
+        width: 33%;
+        border-radius: 28px;
+    }
+    .form-group input{
+        text-align: center;
+        display: block;
+        width: 508px;
+        padding: 1px;
+        border: 2px solid black;
+        margin: 11px auto;
+        font-size: 18px;
+        border-radius: 8px;
+        font-family: 'Anton', sans-serif;
+    }
+    .container h1{
+        text-align: center;
+    }
+    .container button{
+        display: block;
+        width: 74%;
+        margin: 20px auto;
+    }
+</style>
+<body>
+    <header class="header">
+        <div class="left">
+            <!-- left box for logo -->
+            <img src="/img/barbell-ge0eb1494c_1280.jpg" alt="">
+            <div>Saad Fitness</div>
+        </div>
+        <div class="mid">
+            <!-- mid box for navigation -->
+            <ul class="navbar">
+                <li><a href="#" class="active">Home</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Fitness Calculator</a></li>
+                <li><a href="#">Contact us</a></li>
+            </ul>
+        </div>
+        <div class="right">
+            <!-- right box for button -->
+            <button class="btn">Call us now</button>
+            <button class="btn">Email us</button>
+        </div>
+    </header>
+    
+    <div class="container">
+        <h1>Join the best gym in karachi now</h1>
+        <form action="noaction.php">
+            <div class="form-group">
+                <input type="text" name="" placeholder="Enter your Name">
+            </div>
+            <div class="form-group">
+                <input type="text" name="" placeholder="Enter your Age">
+            </div>
+            <div class="form-group">
+                <input type="text" name="" placeholder="Enter your Gender">
+            </div>
+            <div class="form-group">
+                <input type="text" name="" placeholder="Enter your Locality">
+            </div>
+            <button class="btn">Submit</button>
+        </form>
+    </div>
+</body>
+</html>
